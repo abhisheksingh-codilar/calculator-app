@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: hsl(222, 26%, 31%);
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 700px;
+	background-color: hsl(222, 26%, 31%);
+}
+.upper-bar {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	height: 50px;
+	>.heading {
+		font-size: 40px;
+		color: #fff;
+	}
+}
+.input-bar {
+	>input {
+		width: 100%;
+		height: 90px;
+		background-color: hsl(224, 36%, 15%);
+		border-radius: 5px;
+		border: 1px solid hsl(224, 36%, 15%);
+		outline: none;
+		color: white;
+		text-align: end;
+		font-size: 35px;
+		padding-right: 10px;
+	}
+	padding: 20px;
+}
+.table {
+	padding: 20px;
+	display: grid;
+	grid-template-rows: repeat(5,1fr);
+	grid-template-columns: repeat(4,1fr);
+	row-gap: 20px;
+	column-gap: 20px;
+	background-color: hsl(223, 31%, 20%);
+	margin: 20px;
+	border-radius: 5px;
+	height: 400px;
+	>button {
+		height: 45px;
+		background-color: hsl(30, 25%, 89%);
+		color: hsl(221, 14%, 31%);
+		font-size: 30px;
+		border: 1px solid hsl(30, 25%, 89%);
+		border-radius: 5px;
+		font-weight: bolder;
+		box-shadow: 0px 3px 1px 0px hsl(28, 16%, 65%);
+	}
+	>.del {
+		height: 45px;
+		background-color: hsl(225, 21%, 49%);
+		color: white;
+		font-size: 30px;
+		border: 1px solid hsl(225, 21%, 49%);
+		border-radius: 5px;
+		font-weight: bolder;
+		box-shadow: 0px 3px 1px 0px hsl(225, 21%, 49%);
+	}
+	>.reset {
+		height: 45px;
+		background-color: hsl(225, 21%, 49%);
+		color: white;
+		font-size: 30px;
+		border: 1px solid hsl(225, 21%, 49%);
+		border-radius: 5px;
+		font-weight: bolder;
+		box-shadow: 0px 3px 1px 0px hsl(225, 21%, 49%);
+	}
+	>.equals {
+		height: 45px;
+		background-color: hsl(6, 63%, 50%);
+		color: white;
+		font-size: 30px;
+		border: 1px solid hsl(6, 63%, 50%);
+		border-radius: 5px;
+		font-weight: bolder;
+		box-shadow: 0px 3px 1px 0px hsl(6, 63%, 50%);
+	}
+}
+.equals {
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+.reset {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.darkmode {
+	background-color: #000;
+}
