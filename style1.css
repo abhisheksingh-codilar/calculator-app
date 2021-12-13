@@ -6,7 +6,9 @@
 body {
   background-color: #3a4764;
   min-height: 100vh;
-  width:100%; }
+  width:100%; 
+  overflow-x: hidden;
+}
 
 .container {
  margin-top: 100px;
@@ -24,6 +26,17 @@ body {
   .upper-bar > .heading {
     font-size: 40px;
     color: #fff; }
+
+    .upper-bar>input{
+      width: 100px;
+    }
+
+    .theme{
+      font-size: 16px;
+      padding-left: 202px;
+      font-weight: bolder;
+      color: #fff;
+    }
 
 .input-bar {
   padding: 20px; }
@@ -100,5 +113,66 @@ body {
 
 
 
+  /* Media Queries */
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      margin-top: 60px;
+       margin-left: auto;
+       margin-right: auto;
+       width: 400px;
+       height: 1000px;
+       background-color: #3a4764; }
+
+
+
+        
+       .table{
+         height: 500px;
+         row-gap: 15px;
+        column-gap: 15px;
+       }
+
+       .table > button {
+        height: 60px;
+
+        }
+
+        .table > .del {
+          height: 60px;}
+
+          .table > .reset {
+            height: 60px;}
+
+
+            .table > .equals {
+              height: 60px;}
+
+       .upper-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        height: 40px;
+        font-size: 15px;  
+       }
+       .upper-bar>input{
+         width: 70px;
+         margin-right: 10px;
+       }
+        .heading{
+         font-size: 45px;
+         padding-left: 10px;
+         padding-bottom: 30px;
+       }
+    }
+
+
+
+    @media only screen and (max-width: 400px) {
+      .container {
+        width: 350px;
+      }
+    }
+  
 
 /*# sourceMappingURL=style1.css.map */

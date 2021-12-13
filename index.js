@@ -126,3 +126,7 @@ function calculate(){
 function del(){
     outputScreen.value=outputScreen.value.slice(0,-1);
 }
+
+
+
+
